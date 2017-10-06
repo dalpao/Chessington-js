@@ -1,6 +1,13 @@
+// import King from "./king";
+// import Player from "../player";
+// import Board from "../board";
+// import Square from "../square";
+
+
 export default class Piece {
-    constructor(player) {
+    constructor(player, King) {
         this.player = player;
+        this.isKing = King;
     }
 
     getAvailableMoves(board) {
